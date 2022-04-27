@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    color: black
+}
+
+body {
+    width: 100%;
+    flex-direction:column;
+}
+
+.container {
+    width: 48em;
+    overflow: hidden;
+}
+
+.slideBar{
+    display: flex;
+    transition-delay: 250ms;
+    
+}
+
+.image1 {
+    
+   
+}
+
+.image2 {
+  
+}
+
+.image3 {
+   
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+}
+
+i.material-icons {
+    font-size: 3em;
+}
