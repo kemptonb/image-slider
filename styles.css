@@ -13,39 +13,78 @@ html, body {
 }
 
 body {
+    display: flex;
     width: 100%;
     flex-direction:column;
 }
 
 .container {
-    width: 48em;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;    
 }
 
 .slideBar{
     display: flex;
     transition-delay: 250ms;
-    
 }
 
-.image1 {
-    
-   
+.slide{
+    margin: 0 auto;
+    max-width: 100%;
+    display: none;
 }
 
-.image2 {
-  
+.seen {
+    display: block;
 }
 
-.image3 {
-   
-}
 
 .arrows {
     display: flex;
     justify-content: center;
 }
 
-i.material-icons {
+i.buttons {
     font-size: 3em;
 }
+
+i:hover {
+    cursor: pointer;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+.header {
+    display: flex;
+    padding: 1em;
+    font-size: 2.5em;
+}
+
+hr {
+    display: flex;
+    border: 0;
+    border-top: 5px double black;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    i.buttons {
+      font-size: 1.5em;
+    }
+  }
+
+
+
+
